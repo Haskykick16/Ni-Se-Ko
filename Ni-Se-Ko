@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=cover"
+    />
+    <title>PROPFLEX</title>
+  </head>
+
+  <body>
+    <script src="https://static.line-scdn.net/liff/edge/versions/2.13.0/sdk.js"></script>
+    <script>
+      async function main() {
+        await liff.init({ liffId: "1661276146-OKZdZbwq" });
+        await liff.shareTargetPicker([
+          {
+            type: "flex",
+            altText: "PROPFLEX",
+            contents: {
+              type: "carousel",
+              contents: [
+                {
+                  type: "bubble",
+                  hero: {
+                    type: "image",
+                    size: "full",
+                    aspectRatio: "1:1",
+                    backgroundColor: "#000000FF",
+                    action: {
+                      type: "uri",
+                      label: "แชร์",
+                      uri: "https://liff.line.me/1661276146-OKZdZbwq",
+                    },
+                    url: "https://i.im.ge/2023/05/31/FMSZmX.jpg",
+                  },
+                  footer: {
+                    type: "box",
+                    layout: "horizontal",
+                    contents: [
+                      {
+                        type: "image",
+                        size: "full",
+                        aspectMode: "fit",
+                        aspectRatio: "3:1",
+                        url: "https://i.im.ge/2023/05/31/FMdThm.png",
+                        action: {
+                          type: "uri",
+                          label: "ติดต่อ",
+                          uri: "https://line.me/ti/p/qicvmtzEe3",
+                        },
+                      },
+                    ],
+                    maxHeight: "100px",
+                    spacing: "none",
+                    paddingAll: "xs",
+                    offsetBottom: "lg",
+                  },
+                  styles: {
+                    footer: {
+                      backgroundColor: "#000000",
+                      separatorColor: "#FFEA00",
+                    },
+                  },
+                },
+                {
+                  type: "bubble",
+                  hero: {
+                    type: "image",
+                    size: "full",
+                    aspectRatio: "1:1",
+                    backgroundColor: "#000000FF",
+                    action: {
+                      type: "uri",
+                      label: "แชร์",
+                      uri: "https://liff.line.me/1661276146-OKZdZbwq",
+                    },
+                    url: "https://i.im.ge/2023/05/31/FMSKW8.jpg",
+                  },
+                  footer: {
+                    type: "box",
+                    layout: "horizontal",
+                    contents: [
+                      {
+                        type: "image",
+                        size: "full",
+                        aspectRatio: "3:1",
+                        aspectMode: "fit",
+                        action: {
+                          type: "uri",
+                          label: "ติดต่อ",
+                          uri: "https://line.me/ti/p/qicvmtzEe3",
+                        },
+                        url: "https://i.im.ge/2023/05/31/FMdQof.png",
+                      },
+                    ],
+                    maxHeight: "100px",
+                    spacing: "none",
+                    paddingAll: "xs",
+                    offsetBottom: "lg",
+                  },
+                  styles: {
+                    footer: {
+                      backgroundColor: "#000000",
+                      separatorColor: "#FFEA00",
+                    },
+                  },
+                },
+              ],
+            },
+          },
+        ]);
+        liff.closeWindow();
+      }
+      main();
+    </script>
+  </body>
+</html>
